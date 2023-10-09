@@ -1,11 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
+title: Automated Home Server
+description: Docker-compose enabled home media server, complete with reverse proxy and other automated features
+img:
+importance: 3
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.

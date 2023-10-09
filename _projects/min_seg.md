@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Self-Balancing Segway
+description: Design and test of a state feedback control model to balance an unstable system
+img: #assets/img/3.jpg
+importance: 2
+category: academic
+giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

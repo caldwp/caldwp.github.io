@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Wireless Audio Visualizer
+description: Smart LED strip programmed to receive audio data packets over MQTT to output a light based frequency response
+img: #assets/img/7.jpg
+redirect: #https://unsplash.com
 importance: 3
-category: fun
+category: academic
 ---
 
 Every project has a beautiful feature showcase page.
