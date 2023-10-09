@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://caldwp.github.io/sitemap.xml
