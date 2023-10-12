@@ -2,7 +2,7 @@
 layout: page
 title: Wireless Audio Visualizer
 description: Smart LED strip programmed to receive audio data packets over MQTT to output a light based frequency response
-img: #assets/img/7.jpg
+img: assets/img/aud_vis.png
 redirect: #https://unsplash.com
 importance: 3
 category: academic

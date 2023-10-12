@@ -2,7 +2,7 @@
 layout: page
 title: ToF Occupancy Sensor
 description: Worked on enhancements for ESP32 based, BLE Mesh and Time of Flight (ToF) based sensor for occupant motivated building automation
-img: #assets/img/7.jpg
+img: assets/img/mesh_net.jpg
 redirect: #https://unsplash.com
 importance: 3
 category: academic

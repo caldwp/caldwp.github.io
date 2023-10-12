@@ -2,7 +2,7 @@
 layout: page
 title: Self-Balancing Segway
 description: Design and test of a state feedback control model to balance an unstable system
-img: #assets/img/3.jpg
+img: assets/img/mini_seg.png
 importance: 2
 category: academic
 giscus_comments: true

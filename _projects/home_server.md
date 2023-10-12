@@ -2,7 +2,7 @@
 layout: page
 title: Automated Home Server
 description: Docker-compose enabled home media server, complete with reverse proxy and other automated features
-img:
+img: assets/img/server.jpg
 importance: 1
 category: home
 ---

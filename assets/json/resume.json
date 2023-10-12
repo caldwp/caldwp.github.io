@@ -1,77 +1,75 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Preston Caldwell",
+    "label": "Electrical Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "caldwp@protonmail.com",
+    "phone": "(518) 653-8314",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "postalCode": "FL 32780",
+      "city": "Titusville",
       "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "region": "Florida"
+        }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Lockheed Martin - Rotary & Mission Systems",
+      "position": "Software Engineer",
+      "startDate": "05.2021",
+      "endDate": "Now",
+      "summary": "Starting as an intern in 2021, I worked on setting up flight simulators and designed high-level system diagrams for a UAV as part of an intern project. In 2022 I gained experience with DAQ systems, participated in a trade study, and acted as the Project Lead for my teams' internship project. I started as a full time hire after graduation and currently work on networking software for one of our flagship simulators. I have also acted as Lead Software Engineer in a small team of people upgrading an accessory to this simulator.",
       "highlights": [
-        "Relativity"
+        "DAQ Systems, C++, Bash Scripting, Git, AGILE mentality, Project Management, DOORS Next"
+      ]
+    },
+    {
+    
+      "name": "Rensselear Polytechnic Institute",
+      "position": "Student Assistant",
+      "startDate": "01.2022",
+      "endDate": "05.2023",
+      "summary": "Aided in student learning and problem solving skills development for Electric Circuits under Dr. Shayla Sawyer. Held office hours weekly and assisted in grading of student labs.",
+      "highlights": [
+        "Teaching, Mentoring, Grading"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Rensselaer Polytechnic Institute, Troy, NY, USA",
+      "url": "https://www.rpi.edu/",
+      "area": "Electrical Engineering, Computer & Systems Engineering",
+      "focus": "Robotics & Automation",
+      "studyType": "B.S.",
+      "startDate": "09.2019",
+      "endDate": "05.2023",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        "Robotics II", "Mechatronics", "Internetworking of Things"
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
+  "awards": [],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "English",
       "fluency": "Native speaker"
     },
     {
-      "language": "English",
-      "fluency": "Fluent"
+      "language": "Spanish",
+      "fluency": "Intermediate"
     }
   ],
-  "interests": [],
+  "interests":
+    {
+      "academic": "Bio-Inspired Robotics, Cobots, Wearable Robotics, Smart/Autonomous Systems, Embedded Systems, Space Exploration, Vehicle Design, Life Sciences",
+      "hobbies": "Camping, Hiking, Skiing, Cars, Guitar, Painting"
+    },
   "references": [],
   "projects": []
 }

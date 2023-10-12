@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Preston Caldwell
     - name: Date of Birth
-      value: 14th March 1879
+      value: 20th April 2001
     - name: Languages
-      value: English, German
+      value: English, Spanish
 
 - title: Education
   type: time_table

@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: My academic and passion projects.
+description: My academic and passion projects. More info coming soon.
 nav: true
 nav_order: 2
 display_categories: [home, academic]

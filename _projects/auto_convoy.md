@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Convoy
 description: Leveraging ROS packages to simulate automated logistics
-img: #assets/img/12.jpg
+img: assets/img/auto_convoy.png
 importance: 1
 category: academic
 related_publications:
