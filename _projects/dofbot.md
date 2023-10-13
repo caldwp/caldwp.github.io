@@ -5,7 +5,7 @@ description: Simple simulated robotic assembly line using YAHBOOM's DOFBOT, Pyth
 img: assets/img/dofbot.png
 redirect: #https://unsplash.com
 importance: 5
-category: academic
+category: fake #academic
 ---
 
 Page in progress. More info coming soon!

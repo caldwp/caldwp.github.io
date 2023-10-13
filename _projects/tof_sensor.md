@@ -5,7 +5,7 @@ description: Developed, tested and verified the BLE Mesh networking capabilities
 img: assets/img/mesh_net.jpg
 redirect: #https://unsplash.com
 importance: 3
-category: academic
+category: fake #academic
 ---
 
 Page in progress. More info coming soon!
