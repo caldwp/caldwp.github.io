@@ -1,81 +1,56 @@
 ---
 layout: page
 title: Wireless Audio Visualizer
-description: Smart LED strip programmed to receive audio data packets over MQTT to output a light based frequency response
-img: assets/img/aud_vis.png
+description: An LED strip that receives audio data packets and creates a light show to match the audio environment in real time. Enabled by MQTT, NumPy and GPIO.
+img: assets/img/aud_vis/aud_vis.png
 redirect: #https://unsplash.com
 importance: 3
 category: academic
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The goal of this project was to create a wireless device that used audio input to create matching light patterns. 
+The motivation for this project came from the desire to have a room that effortlessly adapts its lighting to the local
+audio environment. This primarily relates to musical applications, but can be used for any audio signal.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project required a networking aspect as it was part of an IoT course, so it functioned with two devices 
+communicating over MQTT. The data transmitter, which could be any device with internet access, took microphone input 
+and output packets wirelessly to the receiver. The receiver, a Raspberry Pi attached to an individually addressable 
+60 LED strip, then changed the brightness of each LED based on the volume of each frequency. The system diagram is 
+shown below.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/aud_vis/diagram.png" title="high level system diagram" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    System Diagram
 </div>
+
+The first steps of the project were verifying that audio data could be acquired from the microphone, establishing a link 
+between devices over MQTT, and verifying the LEDs could be properly set by the RPi over GPIO. After this was finished, 
+the only task left was manipulating the data to be displayable on the LED strip.
+
+Due to audio data being represented logarithmically as shown below in the figure on the left, averaging frequency bands 
+wasn't as easy as linearlly dividing the frequency spectrum into 60 bands (# of LEDs) and averaging each one. This 
+resulted in the formula in the figure in the middle being developed, which quickly averaged the data resulting in it's 
+linear representation on the right. This calculation was quick using NumPy, and resulted in very little latency.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/aud_vis/log_data.png" title="audio data on a logarithmic scale" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/aud_vis/averager.png" title="conversion equation" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/aud_vis/lin_data.png" title="linearly represented data" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Audio Data Scale Conversion
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+The final demonstration of the project reacting live to music can be seen <a href="https://drive.google.com/file/d/1AeWkjft7KwteDXe5vmFd-4qaWfwHAn42/view?usp=sharing">here</a>.
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Future improvements to this project would be to fix remaining latency issues, add an equalizer as certain frequencies have different brightness levels for the same volume, and test with multiple receivers of different LED strip sizes.

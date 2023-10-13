@@ -47,7 +47,9 @@
       "endDate": "05.2023",
       "score": "",
       "courses": [
-        "Robotics II", "Mechatronics", "Internetworking of Things"
+        "Key Courses: Robotics I & II, Mechatronics, Internetworking of Things, Embedded Control, Fields & Waves, Microelectronics Technology, Electrical Energy Systems",
+	"Skills: Object-Oriented Programming, Real-Time Control Systems, FPGA Programming, Power Systems Analysis, Circuit Analysis, Electrical Simulation and Test",
+	"Software: Python, C++, ROS, MATLAB, Simulink, LTSpice"
       ]
     }
   ],
@@ -65,11 +67,16 @@
       "fluency": "Intermediate"
     }
   ],
-  "interests":
+  "interests": [
     {
-      "academic": "Bio-Inspired Robotics, Cobots, Wearable Robotics, Smart/Autonomous Systems, Embedded Systems, Space Exploration, Vehicle Design, Life Sciences",
-      "hobbies": "Camping, Hiking, Skiing, Cars, Guitar, Painting"
+      "name": "Academic",
+      "keywords": "Bio-Inspired Robotics, Cobots, Wearable Robotics, Smart/Autonomous Systems, Embedded Systems, Space Exploration, Vehicle Design, Life Sciences"
     },
+    {
+      "name": "Hobbies",
+      "keywords": "Camping, Hiking, Skiing, Cars, Guitar, Painting"
+    }
+  ],
   "references": [],
   "projects": []
 }
