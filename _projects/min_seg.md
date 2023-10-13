@@ -7,7 +7,7 @@ importance: 2
 category: academic
 ---
 
-This project was part of my Mechtronics class at RPI, and taught us how to create linearized 
+This project was part of my Mechatronics class at RPI, and taught us how to create linearized 
 control systems for non-linear physical systems. The physics of a segway is non-linear, and this is
 seen when separating the system into two parts - the wheel and the pendulum. Seen
 below these diagrams were first analyzed with Newton's Laws, after which relationships were

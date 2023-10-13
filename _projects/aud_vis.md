@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wireless Audio Visualizer
-description: An LED strip that receives audio data packets and creates a light show to match the audio environment in real time. Enabled by MQTT, NumPy and GPIO.
+description: An LED strip that receives audio data packets and creates a light show to match the audio environment in real-time. Enabled by MQTT, NumPy and GPIO.
 img: assets/img/aud_vis/aud_vis.png
 redirect: #https://unsplash.com
 importance: 3
@@ -10,7 +10,7 @@ category: academic
 
 The goal of this project was to create a wireless device that used audio input to create matching light patterns. 
 The motivation for this project came from the desire to have a room that effortlessly adapts its lighting to the local
-audio environment. This primarily relates to musical applications, but can be used for any audio signal.
+audio environment. This primarily relates to musical applications but can be used for any audio signal.
 
 This project required a networking aspect as it was part of an IoT course, so it functioned with two devices 
 communicating over MQTT. The data transmitter, which could be any device with internet access, took microphone input 
@@ -32,9 +32,9 @@ between devices over MQTT, and verifying the LEDs could be properly set by the R
 the only task left was manipulating the data to be displayable on the LED strip.
 
 Due to audio data being represented logarithmically as shown below in the figure on the left, averaging frequency bands 
-wasn't as easy as linearlly dividing the frequency spectrum into 60 bands (# of LEDs) and averaging each one. This 
-resulted in the formula in the figure in the middle being developed, which quickly averaged the data resulting in it's 
-linear representation on the right. This calculation was quick using NumPy, and resulted in very little latency.
+wasn't as easy as linearly dividing the frequency spectrum into 60 bands (# of LEDs) and averaging each one. This 
+resulted in the formula in the figure in the middle being developed, which quickly averaged the data resulting in its 
+linear representation on the right. This calculation was quick using NumPy and resulted in very little latency.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
