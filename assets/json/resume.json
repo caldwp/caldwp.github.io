@@ -14,11 +14,21 @@
   },
   "work": [
     {
+      "name": "Kennedy Space Center - COMET",
+      "position": "Software Engineer",
+      "startDate": "11.2023",
+      "endDate": "Now",
+      "summary": "Initially rotating through different teams to learn the scope of the Artemis Program's COMET contract, I joined the Models & Simulation group. Here I worked on creating and maintaining physics-based fluid and electrical models to train launch day console operators. I also worked on several scripts to automate the design, building and testing of these models reducing employee time spent on tedious and repetitive tasks. In this role I learned a lot about working on existing code bases and adapting to standards set by previous engineers for their software.",
+      "highlights": [
+        "Linux, Python, MATLAB, Simulink, Excel, Automation, Physics-Based Fluid and Electrical Models"
+      ]
+    },
+    {
       "name": "Lockheed Martin - Rotary & Mission Systems",
       "position": "Software Engineer",
       "startDate": "05.2021",
-      "endDate": "Now",
-      "summary": "Starting as an intern in 2021, I worked on setting up flight simulators and designed high-level system diagrams for a UAV as part of an intern project. In 2022 I gained experience with DAQ systems, participated in a trade study, and acted as the Project Lead for my team's internship project. I started as a full-time hire after graduation and currently work on networking software for one of our flagship simulators. I have also acted as Lead Software Engineer in a small team of people upgrading an accessory to this simulator.",
+      "endDate": "11.2023",
+      "summary": "Starting as an intern in 2021, I worked on setting up flight simulators and designed high-level system diagrams for a UAV as part of an intern project. In 2022 I gained experience with DAQ systems, participated in a trade study, and acted as the Project Lead for my team's internship project. I started as a full-time hire after graduation and worked on networking software for one of the company's flagship simulators. I acted as Lead Software Engineer in a small team of people upgrading an accessory to this simulator.",
       "highlights": [
         "DAQ Systems, C++, Bash Scripting, Git, AGILE mentality, Project Management, DOORS Next"
       ]
@@ -65,6 +75,10 @@
     {
       "language": "Spanish",
       "fluency": "Intermediate"
+    }
+    {
+      "language": "Polish",
+      "fluency": "Enthusiastic Beginner"
     }
   ],
   "interests": [
